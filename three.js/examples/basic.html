@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    #video {
+      position: absolute;
+      opacity: 0;
+      width: 10vw;
+      height: 10vw;
+    }
+  </style>
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+  />
+  <!-- three.js library -->
+  <script src="vendor/three.js/build/three.min.js"></script>
+  <!-- ar.js -->
+  <script src="../build/ar.js"></script>
+  <script>
+    THREEx.ArToolkitContext.baseURL = "../";
+  </script>
+  <script src="basic.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
+  <div
+    style="position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;"
+  >
+    <a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a>
+    - three.js camera transform <br />
+    Contact me any time at
+    <a href="https://twitter.com/jerome_etienne" target="_blank"
+      >@jerome_etienne</a
+    >
+  </div>
+  <video id="video" playsinline autoplay loop muted>
+    <source src="./jy.mp4" />
+  </video>
+  <!-- <button onclick="play">播放</button> -->
+</body>
